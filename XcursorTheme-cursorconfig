@@ -1,8 +1,9 @@
 #!/bin/sh
 
 alias nls='gettext -d cursorconfig'
+file=~/.icons/default/index.theme
 themes="core `ls -d /usr/share/icons/*/cursors | sed -e 's,/usr/share/icons/,,;s,/cursors,,'`"
-default=`grep -s Inherits ~/.icons/default/index.theme | cut -f2 -d=`
+default=`grep -s Inherits $file | cut -f2 -d=`
 [ -z $default ] || default="($default)"
 
 theme=`dialog --title 'Cursorconfig' \
@@ -13,5 +14,6 @@ theme=`dialog --title 'Cursorconfig' \
 [ -z $theme ] && exit 0
 
 mkdir -p ~/.icons/default || exit 1
-echo "[Icon Theme]" > ~/.icons/default/index.theme
-echo "Inherits=$theme" >> ~/.icons/default/index.theme
+[ -f $file ] && mv -f $file{,.old}
+echo "[Icon Theme]" > $file
+echo "Inherits=$theme" >> $file
