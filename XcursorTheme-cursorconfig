@@ -1,46 +1,17 @@
 #!/bin/sh
 
 alias nls='gettext -d cursorconfig'
+themes="core `ls -d /usr/share/icons/*/cursors | sed -e 's,/usr/share/icons/,,;s,/cursors,,'`"
+default=`grep -s Inherits ~/.icons/default/index.theme | cut -f2 -d=`
+[ -z $default ] || default="($default)"
 
-themes=`ls -d /usr/share/icons/*/cursors | sed -e 's,/usr/share/icons/,,;s,/cursors,,'`
+theme=`dialog --title 'Cursorconfig' \
+	--backtitle "$(nls 'PLD Linux X Cursor Configuration Utility')" \
+	--one-column \
+	--menu "$(nls 'Available themes:') $default" $(($(echo $themes | wc -w)+7)) 60 0 \
+	$themes`
+[ -z $theme ] && exit 0
 
-if [ -z "$1" ]; then
-	echo "$(nls 'Welcome to the Xcursor theme configurator.')"
-	echo
-	echo "$(nls 'Available themes are:')"
-	echo ${themes}
-	echo
-	if [ -r ~/.Xresources ]; then 
-	
-		if [ -n `grep Xcursor.theme ~/.Xresources|sed -e "s/Xcursor\.theme:\ //g"` ]; then
-			default=`grep Xcursor.theme ~/.Xresources|sed -e "s/Xcursor\.theme:\ //g"`
-		fi
-	
-	
-	elif [ -r ~/.Xdefaults ]; then 
-	
-		if [ -n `grep Xcursor.theme ~/.Xdefaults|sed -e "s/Xcursor\.theme:\ //g"` ]; then
-			default=`grep Xcursor.theme ~/.Xdefaults|sed -e "s/Xcursor\.theme:\ //g"`
-		fi
-	fi
-
-	echo "$(nls 'Currently active:') $default"
-
-else
-
-	if [ -r ~/.Xresources ]; then 
-
-		grep -v Xcursor.theme ~/.Xresources >> ~/.Xresources.tmp1
-		echo "Xcursor.theme: $1"  >> ~/.Xresources.tmp1
-		mv -f ~/.Xresources.tmp1 ~/.Xresources
-	
-	elif [ -r ~/.Xdefaults ]; then 
-	
-		grep -v Xcursor.theme ~/.Xdefaults >> ~/.Xdefaults.tmp1
-		echo "Xcursor.theme: $1"  >> ~/.Xdefaults.tmp1
-	        mv -f ~/.Xdefaults.tmp1 ~/.Xdefaults
-
-	fi
-
-	echo "$(nls 'Switched to theme:') $1."
-fi
+mkdir -p ~/.icons/default || exit 1
+echo "[Icon Theme]" > ~/.icons/default/index.theme
+echo "Inherits=$theme" >> ~/.icons/default/index.theme
