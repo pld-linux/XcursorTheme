@@ -2,11 +2,11 @@ Summary:	X cursor packs from kde-look
 Summary(pl):	Motywy kursorów X z kde-look
 Name:		XcursorTheme
 Version:	1.0
-Release:	5
+Release:	6
 License:	Different per subpackage
 Group:		X11
 # The icon files have been repackaged by me in order to avoid having too much work with %prep
-Source0:	%{name}.tar.bz2
+Source0:	XFree86-Xcursor-packs.tar.bz2
 # Source0-md5:	4770381266eec192263ce9c22a6d424d
 Source1:	%{name}-cursorconfig
 Source2:	%{name}-cursorconfig.pl.po
