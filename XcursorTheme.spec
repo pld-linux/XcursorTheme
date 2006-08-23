@@ -1,3 +1,7 @@
+#
+# TODO: cursorconfig doesn't work on TH dialog
+#	(removing unsupported --one-column option doesn't help)
+#
 Summary:	X cursor packs from kde-look
 Summary(pl):	Motywy kursorów X z kde-look
 Name:		XcursorTheme
