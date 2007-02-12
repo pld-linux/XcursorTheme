@@ -3,7 +3,7 @@
 #	(removing unsupported --one-column option doesn't help)
 #
 Summary:	X cursor packs from kde-look
-Summary(pl.UTF-8):   Motywy kursorów X z kde-look
+Summary(pl.UTF-8):	Motywy kursorów X z kde-look
 Name:		XcursorTheme
 Version:	1.0
 Release:	9
@@ -36,7 +36,7 @@ GKD		noonespecial
 
 %package YCursors
 Summary:	YCursors cursor pack
-Summary(pl.UTF-8):   Motyw kursorów YCursors
+Summary(pl.UTF-8):	Motyw kursorów YCursors
 License:	distributable (see COPYING)
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-YCursors
@@ -49,7 +49,7 @@ Motyw kursorów YCursors autorstwa Daniele Pighin.
 
 %package Red_Dot
 Summary:	Red Dot cursor pack
-Summary(pl.UTF-8):   Motyw kursorów Red Dot
+Summary(pl.UTF-8):	Motyw kursorów Red Dot
 License:	Freeware
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-Red_Dot
@@ -62,7 +62,7 @@ Motyw kursorów Red Dot.
 
 %package vox
 Summary:	vox cursor pack
-Summary(pl.UTF-8):   Motyw kursorów vox
+Summary(pl.UTF-8):	Motyw kursorów vox
 License:	distributable (see COPYING)
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-vox
@@ -75,7 +75,7 @@ Motyw kursorów vox autorstwa Mike'a Bryanta.
 
 %package GKD
 Summary:	GKD cursor pack
-Summary(pl.UTF-8):   Motyw kursorów GKD
+Summary(pl.UTF-8):	Motyw kursorów GKD
 License:	distributable
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-GKD
@@ -88,7 +88,7 @@ Motyw kursorów GKD.
 
 %package tux
 Summary:	Tux cursor pack
-Summary(pl.UTF-8):   Motyw kursorów Tux
+Summary(pl.UTF-8):	Motyw kursorów Tux
 License:	distributable
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-tux
@@ -101,7 +101,7 @@ Motyw kursorów Tux.
 
 %package tuxshadow
 Summary:	Tuxshadow cursor pack
-Summary(pl.UTF-8):   Motyw kursorów Tuxshadow
+Summary(pl.UTF-8):	Motyw kursorów Tuxshadow
 License:	distributable
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-tuxshadow
@@ -114,7 +114,7 @@ Motyw kursorów Tuxshadow.
 
 %package Golden
 Summary:	Golden XCursors 3D cursor pack
-Summary(pl.UTF-8):   Motyw kursorów Golden XCursors 3D
+Summary(pl.UTF-8):	Motyw kursorów Golden XCursors 3D
 License:	LGPL
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-Golden
@@ -127,7 +127,7 @@ Motyw kursorów Golden XCursors 3D.
 
 %package Silver
 Summary:	Silver XCursors 3D cursor pack
-Summary(pl.UTF-8):   Motyw kursorów Silver XCursors 3D
+Summary(pl.UTF-8):	Motyw kursorów Silver XCursors 3D
 License:	LGPL
 Group:		Themes
 Obsoletes:	XFree86-Xcursor-packs-Silver
@@ -140,7 +140,7 @@ Motyw kursorów Silver XCursors 3D.
 
 %package setup
 Summary:	XCursor theme configuration script
-Summary(pl.UTF-8):   Konfigurator motywów XCursor
+Summary(pl.UTF-8):	Konfigurator motywów XCursor
 Group:		Themes
 License:	GPL
 Requires:	dialog
