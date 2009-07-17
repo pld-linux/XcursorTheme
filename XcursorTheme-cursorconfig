@@ -2,16 +2,16 @@
 
 alias nls='gettext -d cursorconfig'
 file=~/.icons/default/index.theme
-themes="core `ls -d /usr/share/icons/*/cursors | sed -e 's,/usr/share/icons/,,;s,/cursors,,'`"
+themes="core theme `ls -d /usr/share/icons/*/cursors | sed -e 's,/usr/share/icons/,,;s,/cursors,,' -e 's/$/ theme/'`"
 default=`grep -s Inherits $file | cut -f2 -d=`
-[ -z $default ] || default="($default)"
+[ -z "$default" ] || default="(core)"
 
 theme=`dialog --title 'Cursorconfig' \
 	--backtitle "$(nls 'PLD Linux X Cursor Configuration Utility')" \
-	--one-column \
-	--menu "$(nls 'Available themes:') $default" $(($(echo $themes | wc -w)+7)) 60 0 \
-	$themes`
-[ -z $theme ] && exit 0
+	--output-fd 3 \
+	--menu "$(nls 'Available themes:') $default" $((($(echo $themes | wc -w)+7)/2)) 60 0 \
+	$themes 3>&1 >&2`
+[ -z "$theme" ] && exit 0
 
 mkdir -p ~/.icons/default || exit 1
 [ -f $file ] && mv -f $file{,.old}

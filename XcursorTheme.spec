@@ -1,7 +1,3 @@
-#
-# TODO: cursorconfig doesn't work on TH dialog
-#	(removing unsupported --one-column option doesn't help)
-#
 Summary:	X cursor packs from kde-look
 Summary(pl.UTF-8):	Motywy kursorów X z kde-look
 Name:		XcursorTheme
@@ -216,7 +212,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/Silver/*
 %{_icondir}/Silver
-
 
 %files setup -f cursorconfig.lang
 %defattr(644,root,root,755)
