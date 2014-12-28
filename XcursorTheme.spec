@@ -11,7 +11,7 @@ Source0:	XFree86-Xcursor-packs.tar.bz2
 Source1:	%{name}-cursorconfig
 Source2:	%{name}-cursorconfig.pl.po
 URL:		http://www.kde-look.org/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_icondir	/usr/share/icons
