@@ -36,7 +36,7 @@ Summary:	YCursors cursor pack
 Summary(pl.UTF-8):	Motyw kursorów YCursors
 License:	distributable (see COPYING)
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-YCursors
+Obsoletes:	XFree86-Xcursor-packs-YCursors < 1.0-6
 
 %description YCursors
 YCursors cursor pack by Daniele Pighin.
@@ -49,7 +49,7 @@ Summary:	Red Dot cursor pack
 Summary(pl.UTF-8):	Motyw kursorów Red Dot
 License:	Freeware
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-Red_Dot
+Obsoletes:	XFree86-Xcursor-packs-Red_Dot < 1.0-6
 
 %description Red_Dot
 Red Dot cursor pack.
@@ -62,7 +62,7 @@ Summary:	vox cursor pack
 Summary(pl.UTF-8):	Motyw kursorów vox
 License:	distributable (see COPYING)
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-vox
+Obsoletes:	XFree86-Xcursor-packs-vox < 1.0-6
 
 %description vox
 vox cursor pack by Mike Bryant.
@@ -75,7 +75,7 @@ Summary:	GKD cursor pack
 Summary(pl.UTF-8):	Motyw kursorów GKD
 License:	distributable
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-GKD
+Obsoletes:	XFree86-Xcursor-packs-GKD < 1.0-6
 
 %description GKD
 GKD cursor pack.
@@ -88,7 +88,7 @@ Summary:	Tux cursor pack
 Summary(pl.UTF-8):	Motyw kursorów Tux
 License:	distributable
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-tux
+Obsoletes:	XFree86-Xcursor-packs-tux < 1.0-6
 
 %description tux
 Tux cursor pack.
@@ -101,7 +101,7 @@ Summary:	Tuxshadow cursor pack
 Summary(pl.UTF-8):	Motyw kursorów Tuxshadow
 License:	distributable
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-tuxshadow
+Obsoletes:	XFree86-Xcursor-packs-tuxshadow < 1.0-6
 
 %description tuxshadow
 Tuxshadow cursor pack.
@@ -114,7 +114,7 @@ Summary:	Golden XCursors 3D cursor pack
 Summary(pl.UTF-8):	Motyw kursorów Golden XCursors 3D
 License:	LGPL
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-Golden
+Obsoletes:	XFree86-Xcursor-packs-Golden < 1.0-6
 
 %description Golden
 Golden XCursors 3D cursor pack.
@@ -127,7 +127,7 @@ Summary:	Silver XCursors 3D cursor pack
 Summary(pl.UTF-8):	Motyw kursorów Silver XCursors 3D
 License:	LGPL
 Group:		Themes
-Obsoletes:	XFree86-Xcursor-packs-Silver
+Obsoletes:	XFree86-Xcursor-packs-Silver < 1.0-6
 
 %description Silver
 Silver XCursors 3D cursor pack.
@@ -145,7 +145,7 @@ Requires:	fileutils
 Requires:	gettext
 Requires:	grep
 Requires:	sed
-Obsoletes:	XFree86-Xcursor-packs-setup
+Obsoletes:	XFree86-Xcursor-packs-setup < 1.0-6
 
 %description setup
 XCursor theme configuration script.
